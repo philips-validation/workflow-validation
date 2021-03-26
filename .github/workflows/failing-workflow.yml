@@ -11,4 +11,4 @@ jobs:
    steps:
    - id: date
      run: |
-       startsWith('Hello world', 'YES')
+       cat non-existing-file
