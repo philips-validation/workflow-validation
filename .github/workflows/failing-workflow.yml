@@ -1,0 +1,14 @@
+name: failing-runner
+
+on: 
+  workflow_dispatch:
+  
+
+
+jobs:
+  myjob:
+   runs-on: ubuntu-latest
+   steps:
+   - id: date
+     run: |
+       startsWith('Hello world', 'YES')
