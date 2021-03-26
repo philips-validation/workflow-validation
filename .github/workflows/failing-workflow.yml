@@ -1,4 +1,4 @@
-name: failing-runner
+name: failing-workflow
 
 on: 
   workflow_dispatch:
