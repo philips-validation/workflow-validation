@@ -6,7 +6,7 @@ on:
 
 
 jobs:
-  myjob:
+  failingjob:
    runs-on: ubuntu-latest
    steps:
    - id: date
