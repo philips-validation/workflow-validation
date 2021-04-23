@@ -1,2 +1,1 @@
-  Triggered by PR on 202104.23.10.49\n
-  Triggered by PR on 202104.23.10.50\n
+# see TRIGGER-COMMIT.md and TRIGGER-PR.md
