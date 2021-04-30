@@ -13,7 +13,7 @@ curl -H 'Content-Type: application/json' -v $TEAMS_WEBHOOK --data-binary @- <<EO
   "summary": "Validation run results",
   "sections": [
     {
-      "activityTitle": "Validation results $VALIDATION_PART - Linux",
+      "activityTitle": "Validation results $VALIDATION_PART - $VALIDATION_OS",
       "activitySubtitle": "results: $VALIDATION_STATUS",
       "markdown": true
     }
