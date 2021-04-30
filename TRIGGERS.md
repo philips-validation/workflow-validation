@@ -1,1 +1,0 @@
-# see TRIGGER-COMMIT.md and TRIGGER-PR.md
