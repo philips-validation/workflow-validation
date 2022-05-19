@@ -36,7 +36,7 @@ jobs:
         env:
         
           VALIDATION_PART: 'TRIGGER'
-          VALIDATION_STATUS: 'success'
+          VALIDATION_STATUS: '${{ job.status }}'
           VALIDATION_OS: '${{github.event_name}}' 
           TEAMS_WEBHOOK: '${{ secrets.TEAMS_WEBHOOK }}'    
 
@@ -46,7 +46,7 @@ jobs:
         env:
         
           VALIDATION_PART: 'TRIGGER'
-          VALIDATION_STATUS: 'success'
+          VALIDATION_STATUS: '${{ job.status }}'
           VALIDATION_OS: '${{github.event_name}}' 
           SLACK_WEBHOOK: '${{ secrets.SLACK_WEBHOOK }}'     
         
