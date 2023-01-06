@@ -11,21 +11,8 @@ on:
   
 jobs:
 
-  getvars:
-   runs-on: ubuntu-latest
-   outputs:
-     ghdate: ${{ steps.date.outputs.date }} 
-     ghbranch: ${{ steps.extractbranch.outputs.branch }} 
-   steps:
-   - id: date
-     run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
-   - id: extractbranch
-     run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-
-        
   run-trigger-tests:
    runs-on: ubuntu-latest
-   needs: getvars
    steps:
       - name: Checkout
         uses: actions/checkout@v2
