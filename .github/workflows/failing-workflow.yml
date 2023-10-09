@@ -3,12 +3,8 @@ name: failing-workflow
 on: 
   workflow_dispatch:
   
-
-
 jobs:
-  failingjob:
-   runs-on: ubuntu-latest
-   steps:
-   - id: date
-     run: |
-       cat non-existing-file
+  cat-non-existing:
+    uses: ./.github/workflows/reusable-workflow.yml 
+    with:
+      filename: non-existing-file
