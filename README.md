@@ -31,6 +31,6 @@ The workflow is triggered manually (on: workflow_dispatch) to meet:
 **Test Specifications**: GH_TC_32  
 **Triggered by**: https://github.com/philips-internal/github-validation-tests/blob/master/cypress/e2e/tests/GHTC-32.cy.js   
 **Required Setup**: 
-- file ``README.md`` should **NOT** exist in repository
+- file ``README.md`` should  exist in repository
 - workflow ``successful.yml`` generates a tar file of the README.md file and upload the tar file as artifact
-- 
+
