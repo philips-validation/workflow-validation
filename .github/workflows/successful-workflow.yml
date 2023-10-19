@@ -13,7 +13,7 @@ jobs:
         
    - id: date
      run: |
-       tar cvf ValidationArtifact.tgz README.md 
+       tar cvzf ValidationArtifact.tgz README.md 
 
    - name: upload artifact
      uses: actions/upload-artifact@v3
